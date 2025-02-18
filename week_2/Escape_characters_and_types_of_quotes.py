@@ -73,7 +73,7 @@ print(x.endswith('N')) #false
 x = "Python String Methods"
 print(x.count("t")) #3
 print(x.count("s")) #1
-print(x.index("t")) #2
+print(x.index("t")) #2 index("t") returns the index of the first occurrence of "t".
 print(x.index("s")) #20
 x = x.replace("S", "s")
 x = x.replace("M", "m")
