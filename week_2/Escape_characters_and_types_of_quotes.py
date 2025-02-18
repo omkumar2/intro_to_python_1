@@ -1,6 +1,6 @@
 #Escape characters 
 #print('It's a beautiful day') #error
-print('It\'s a beautiful day') #it's a beautiful day  , and \ this is a escape characters
+print('It\'s a beautiful day') #it's a beautiful day  ,                     and \ this is a escape characters
 print("We are from \"IIT\" Madras") #We are from "IIT" Madras
 print('We are from "IIT" Madras') #We are from "IIT" Madras
 
