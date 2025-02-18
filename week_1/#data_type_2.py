@@ -1,7 +1,7 @@
 a=int(5.7)
 b=int("10")
 
-print(a, type(a)) #5<class 'int'>
+print(a, type(a)) #5 <class 'int'>
 print(b, type(b)) #10 <class 'int'>
 
 c=float(5)
