@@ -23,9 +23,9 @@ print("Area of the circle with radius",r,"is",area)
 #list
 
 l=[10,20,30]
-print(l[0])
-print(l[1])
-print(l[2])
+print(l[0]) # 10
+print(l[1]) # 20
+print(l[2]) # 30
 
 print(type(l[2]))#<class 'int'>
 print(type(l)) #this show console -- <class 'list'>
