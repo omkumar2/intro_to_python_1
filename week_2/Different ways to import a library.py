@@ -19,14 +19,23 @@ print("your pair of dice is:",total) #Any number you want 1 to 12
 #next
 #let us simulate a coin toss.
 import random
-a=random.random()
-if(a<.5):
-  print("Heads")
+
+a = random.randrange(1,10)  # Generates a number between 0.0 and 1.0
+if a < 0.5:
+    print("Heads")
 else:
-  print("Tails")  # This Is a Random head and tail
+    print("Tails")  # This Is a Random head and tail
+  
+  
+import random
+
+outcome = random.choice(["Heads", "Tails"])
+print(outcome)
   
   #Different ways to import a library
-
+  
+  
+  
 import calendar
 print(calendar.month(2026,5)) #it show entire month
 print(calendar.calendar(2026)) #it show Entire year
