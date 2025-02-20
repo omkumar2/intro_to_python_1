@@ -22,8 +22,8 @@ digits = 0
 for c in strNum:
   digits = digits + 1
 print(digits)
-# lentgh = len(str(num))
-# print(lentgh)
+lentgh = len(str(num))
+print(lentgh)
 
 # Enter a number: 4567
 # 4
