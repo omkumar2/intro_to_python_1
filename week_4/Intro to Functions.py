@@ -5,7 +5,7 @@ fruits = ["mango", "apple", "banana", "orange", "pineapple", "watermelon", "guav
 newList = []
 for fruit in fruits:
   if "n" in fruit:
-    newList.append(fruit.capitalize()) #capitalize() is used to capitalize the first letter of the string
+    newList.append(fruit.capitalize())    # capitalize() is used to capitalize the first letter of the string
 '''
 newList = [fruit.capitalize() for fruit in fruits if "n" in fruit]
 print(newList)  #['Mango', 'Banana', 'Orange', 'Pineapple', 'Watermelon']
