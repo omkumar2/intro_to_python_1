@@ -3,7 +3,7 @@ def add(a, b, c):
     return (a + b - c)
 
 print(add( a = 20,b = 30,c =  40)) #10
-print(add(20, 30, 40))
+print(add(20, 30, 40)) #10
 
 #next
 def add(c, a = 20, b = 30):
