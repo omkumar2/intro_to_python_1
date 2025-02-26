@@ -27,29 +27,29 @@ y=[7,1,2]
 
 print(dot_product(x,y))
 
-def row(M,i):
-    l=[]
+def row(M, i, dim):
+    l = []
     for k in range(dim):
         l.append(M[i][k])
     return l
 
 A=[[1,2,3],[4,5,6],[7,8,9]]
-print(row(A,2))
+print(row(A, 2, len(A)))
 
-def column(M,j):
-    l=[]
+def column(M, j, dim):
+    l = []
     for k in range(dim):
         l.append(M[k][j])
     return l
 
-print(column(A,2))
+print(column(A, 2, len(A)))
 
 def mat_mul(A,B):
     dim=len(A)
     C=initialize_matrix(dim)
     for i in range(dim):
         for j in range(dim):
-            C[i][j]=dot_product(row(A,i),column(B,j))
+            C[i][j] = dot_product(row(A, i, dim), column(B, j, dim))
     return C
 
 A=[[1,2,3],[4,5,6],[7,8,9]]
