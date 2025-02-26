@@ -42,7 +42,7 @@ def column(M,j):
     for k in range(dim):
         l.append(M[k][j])
     return l
-    return l
+    
 
 print(column(A,2))
 
