@@ -57,6 +57,7 @@ else:
     
 #or
 
+
 num = int(input("Enter the number: "))
 absNum =abs(num)
 rev = absNum % 10
@@ -71,7 +72,7 @@ else:
     print(rev - 2 * rev)
 
 #Enter the number: -1234
-#-4321
+-4321
 
 rev = absNum % 10
 absNum = absNum // 10
@@ -83,9 +84,9 @@ if(num < 0):
     rev = rev - 2 * rev
   
 if(num == rev):
-    print("Palindrome")
+    print("not a Palindrome")
 else:
-    print("Not a Palindrome")
+    print("Palindrome")
 
 #Enter the number: 12321       Enter the number: 456
 #Palindrome                    Not a Palindrome
