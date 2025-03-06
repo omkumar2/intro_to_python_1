@@ -1,7 +1,7 @@
 from ollama import chat
 from ollama import ChatResponse
 
-response: ChatResponse = chat(model='dolphin-llama3:8b', messages=[
+response: ChatResponse = chat(model='llama3.1', messages=[
   {
     'role': 'user',
     'content': input('Prompt: '),
