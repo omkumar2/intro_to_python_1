@@ -1,31 +1,42 @@
-def count_vowels(word):
-    # Define vowels (both lowercase and uppercase)
-    vowels = 'aeiouAEIOU'
-    # Count vowels in the word
-    return sum(1 for char in word if char in vowels)
+n = int(input())
+for i in range(n-1):
+    print(f"{' '*i}\\{' '*(2*(n-i)-3)}/")
+print(' '*(n-1)+'v')
 
-def process_string(input_string):
-    # Split the string into words
-    words = input_string.split()
-    
-    # Process each word and store results
-    results = []
-    for word in words:
-        vowel_count = count_vowels(word)
-        results.append(f"{word} ({vowel_count})")
-    
-    # Join results with spaces and return
-    return " ".join(results)
 
-# Test the program
-def main():
-    # Get input from user
-    text = input("Enter a string: ")
-    
-    # Process and print the result
-    result = process_string(text)
-    print(result)
 
-# Run the program
-if __name__ == "__main__":
-    main()
+n = int(input())
+for i in range(1, n + 1):
+    if i < n:
+        print(' ' * (i - 1) + '\\' + ' ' * (2 * (n - i) - 1) + '/')
+    else:
+        print(' ' * (n - 1) + 'v')
+        
+        
+
+n = int(input())
+for i in range(n):
+    print(f"{' '*i}\\{' '*(2*(n-i)-1)}/")
+print(f"{' '*n}x")
+for i in range(n-1,-1,-1):
+    print(f"{' '*i}/{' '*(2*(n-i)-1)}\\")
+    
+    
+
+n = int(input())
+# Top half
+for i in range(1, n + 1):
+        print( ' ' * (i - 1) + '\\' +  ' ' * (2 * (n - i) + 1) + '/')
+# Center
+print(' ' * n + 'x')
+# Bottom half
+for i in range(n, 0, -1):
+    print( ' ' * (i - 1) + '/' +  ' ' * (2 * (n - i) + 1) + '\\')
+    
+    
+    
+
+n = int(input())
+for i in range(n):
+    print(f"|{' '*i}\\{' '*(n-i-1)}|")
+    

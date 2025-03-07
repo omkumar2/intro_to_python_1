@@ -1,5 +1,7 @@
-from ollama_script import chat
-from ollama_script import ChatResponse
+
+
+from ollama import chat
+from ollama import ChatResponse
 
 response: ChatResponse = chat(model='llama3.1', messages=[
   {
@@ -7,6 +9,5 @@ response: ChatResponse = chat(model='llama3.1', messages=[
     'content': input('Prompt: '),
   },
 ])
-print(response['message']['content'])
-
+print(response['message']['content'], end='\n')
 
