@@ -93,14 +93,14 @@ for i in range(n,0,-1):
 n = int(input())
 
 for i in range(n):
-    spaces = ' ' * (n - i - 1)  # Leading spaces to center the triangle
-    zeros = ' '.join('0' * (i + 1))  # Creating the row with spaces between zeros
+    spaces = '!' * (n - i - 1)  # Leading spaces to center the triangle
+    zeros = '!'.join('0' * (i + 1))  # Creating the row with spaces between zeros
     print(spaces + zeros)
 
 
-n = int(input())
+n = 4
 for i in range(n,0,-1):
-    print(f"{' '*(i-1)}{' 0'*(n-(i-1))}") 
+    print(f"{'!'*(i-1)}{'0'*(n-(i-1))}") 
     
     
 
