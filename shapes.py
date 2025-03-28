@@ -90,7 +90,7 @@ for i in range(n,0,-1):
 
     
     
-n = int(input())
+n = 4
 
 for i in range(n):
     spaces = '!' * (n - i - 1)  # Leading spaces to center the triangle
