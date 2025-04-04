@@ -1,12 +1,16 @@
-from ollama import chat
-from ollama import ChatResponse
+import pandas as pd
+import yfinance as yf
 
-response: ChatResponse = chat(model='llama3.2:latest', messages=[
-  {
-    'role': 'user',
-    'content': input(),
-  },
-])
-print(response['message']['content'])
+# Fetch data
+stock = yf.download("AAPL", start="2024-01-01", end="2025-04-04")
+stock['MA50'] = stock['Close'].rolling(window=50).mean()
+stock['MA200'] = stock['Close'].rolling(window=200).mean()
 
- 
+# Trading logic
+if stock['MA50'].iloc[-1] > stock['MA200'].iloc[-1]:
+    print("Buy signal!")
+else:
+    print("Sell or hold.")
+    
+    
+    

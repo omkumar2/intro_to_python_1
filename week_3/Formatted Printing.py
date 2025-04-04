@@ -10,9 +10,9 @@ print(d, m, y, sep = "-") # todays date is 3-2-2025
 
 num = int(input("enter a number: "))
 for i in range(1, 11):
-  #print(num, 'x', i, '=', num*i)
-  #print(f'{num} x {i} = {num*i}')
-  #print('%d X %d = %d' %(num, i, num*i))
+  print(num, 'x', i, '=', num*i)
+  print(f'{num} x {i} = {num*i}')
+  print('%d X %d = %d' %(num, i, num*i))
   print('{0} X {1} = {2}'.format(num, i, num*i))
 
 # enter a number: 5
