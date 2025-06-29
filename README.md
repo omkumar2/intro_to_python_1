@@ -1,6 +1,5 @@
 # intro_to_python_1
 
-i am from iit madras
+I am for IIT Madars (bs degree).
 
-if you are Checking my repository
-hello
+

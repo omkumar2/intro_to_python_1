@@ -1,10 +1,12 @@
+from ollama import chat
+from ollama import ChatResponse
 
-from google import genai
+response: ChatResponse = chat(model='gemma3:latest', messages=[
+  {
+    'role': 'assistant',
+    'content': input("Enter your message: "),
+  },
+])
+print(response['message']['content'])
 
-client = genai.Client(api_key="AIzaSyCLGTQ_Bf4jm-hjo13cnw-fd11HrObF0YA")
-
-response = client.models.generate_content(
-    model="gemini-2.0-flash", contents=input()
-)
-print(response.text)
 
